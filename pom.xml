@@ -58,9 +58,9 @@
   </issueManagement>
 
   <scm>
-    <connection>scm:git:ssh://git@bitbucket.org/atlassian/httpclient</connection>
-    <developerConnection>scm:git:ssh://git@bitbucket.org/atlassian/httpclient</developerConnection>
-    <url>scm:git:ssh://git@bitbucket.org/atlassian/httpclient</url>
+    <connection>scm:git:ssh://git@github.com/atlassian/httpclient</connection>
+    <developerConnection>scm:git:ssh://git@github.com/atlassian/httpclient</developerConnection>
+    <url>scm:git:ssh://git@github.com/atlassian/httpclient</url>
   </scm>
 
     <distributionManagement>
