@@ -29,12 +29,11 @@
     <artifactId>project</artifactId>
     <groupId>org.apache.httpcomponents</groupId>
     <version>6</version>
-    <relativePath>../project/pom.xml</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <artifactId>httpcomponents-client</artifactId>
   <name>HttpComponents Client</name>
-  <version>4.2.1</version>
+  <version>4.2.1-atlassian-1-SNAPSHOT</version>
   <description>Apache HttpComponents Client is a library of components for building client side HTTP services</description>
   <url>http://hc.apache.org/httpcomponents-client</url>
   <inceptionYear>1999</inceptionYear>
@@ -59,10 +58,23 @@
   </issueManagement>
 
   <scm>
-    <connection>scm:svn:https://svn.apache.org/repos/asf/httpcomponents/httpclient/tags/4.2.1</connection>
-    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/httpcomponents/httpclient/tags/4.2.1</developerConnection>
-    <url>https://svn.apache.org/repos/asf/httpcomponents/httpclient/tags/4.2.1</url>
+    <connection>scm:git:ssh://git@bitbucket.org/atlassian/httpclient</connection>
+    <developerConnection>scm:git:ssh://git@bitbucket.org/atlassian/httpclient</developerConnection>
+    <url>scm:git:ssh://git@bitbucket.org/atlassian/httpclient</url>
   </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>atlassian-m2-repository</id>
+            <name>Atlassian Public Repository</name>
+            <url>https://maven.atlassian.com/public</url>
+        </repository>
+        <snapshotRepository>
+            <id>atlassian-m2-snapshot-repository</id>
+            <name>Atlassian Public Snapshot Repository</name>
+            <url>https://maven.atlassian.com/public-snapshot</url>
+        </snapshotRepository>
+    </distributionManagement>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

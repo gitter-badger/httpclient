@@ -4,3 +4,7 @@
 .clover
 .externalToolBuilders
 target
+*.iml
+*.ipr
+*.iws
+.idea
