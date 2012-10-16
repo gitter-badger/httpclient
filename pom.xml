@@ -34,7 +34,7 @@
   <modelVersion>4.0.0</modelVersion>
   <artifactId>httpcomponents-asyncclient</artifactId>
   <name>HttpComponents AsyncClient</name>
-  <version>4.0-beta4-SNAPSHOT</version>
+  <version>4.0-beta3-atlassian-1-SNAPSHOT</version>
   <description>Components to build asynchronous client side HTTP services</description>
   <url>http://hc.apache.org/httpcomponents-asyncclient</url>
   <inceptionYear>2010</inceptionYear>
@@ -58,11 +58,24 @@
     <url>http://issues.apache.org/jira/browse/HTTPASYNC</url>
   </issueManagement>
 
-  <scm>
-    <connection>scm:svn:https://svn.apache.org/repos/asf/httpcomponents/httpasyncclient/trunk</connection>
-    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/httpcomponents/httpasyncclient/trunk</developerConnection>
-    <url>https://svn.apache.org/repos/asf/httpcomponents/httpasyncclient/trunk</url>
-  </scm>
+    <scm>
+        <connection>scm:git:ssh://git@github.com/atlassian/httpclient</connection>
+        <developerConnection>scm:git:ssh://git@github.com/atlassian/httpclient</developerConnection>
+        <url>scm:git:ssh://git@github.com/atlassian/httpclient</url>
+    </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>atlassian-m2-repository</id>
+            <name>Atlassian Public Repository</name>
+            <url>https://maven.atlassian.com/public</url>
+        </repository>
+        <snapshotRepository>
+            <id>atlassian-m2-snapshot-repository</id>
+            <name>Atlassian Public Snapshot Repository</name>
+            <url>https://maven.atlassian.com/public-snapshot</url>
+        </snapshotRepository>
+    </distributionManagement>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

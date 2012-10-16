@@ -6,3 +6,7 @@
 target
 maven-eclipse.xml
 
+.idea
+*.iml
+*.ipr
+*.iws
