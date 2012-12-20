@@ -1093,4 +1093,13 @@ public abstract class AbstractHttpClient implements HttpClient {
         return result;
     }
 
+    public void shutdown()
+    {
+        shutdownConnectionManager();
+    }
+
+    private synchronized void shutdownConnectionManager()
+    {
+        if (connManager != null) connManager.shutdown();
+    }
 }

@@ -125,6 +125,11 @@ public class AutoRetryHttpClient implements HttpClient {
         return responseHandler.handleResponse(resp);
     }
 
+    public void shutdown()
+    {
+        backend.shutdown();
+    }
+
     public HttpResponse execute(HttpUriRequest request) throws IOException {
         HttpContext context = null;
         return execute(request, context);
