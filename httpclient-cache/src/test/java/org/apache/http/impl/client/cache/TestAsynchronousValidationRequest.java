@@ -74,7 +74,6 @@ public class TestAsynchronousValidationRequest {
                 mockParent, mockClient, target, request, mockContext, mockCacheEntry,
                 identifier, 0);
 
-        // response not used
         EasyMock.expect(mockClient.revalidateCacheEntry(target, request, mockContext, mockCacheEntry)).andReturn(mockResponse);
         EasyMock.expect(mockResponse.getStatusLine()).andReturn(mockStatusLine);
         EasyMock.expect(mockStatusLine.getStatusCode()).andReturn(200);
@@ -94,7 +93,6 @@ public class TestAsynchronousValidationRequest {
                 mockParent, mockClient, target, request, mockContext, mockCacheEntry,
                 identifier, 0);
 
-        // response not used
         EasyMock.expect(mockClient.revalidateCacheEntry(target, request, mockContext, mockCacheEntry)).andReturn(mockResponse);
         EasyMock.expect(mockResponse.getStatusLine()).andReturn(mockStatusLine);
         EasyMock.expect(mockStatusLine.getStatusCode()).andReturn(503);
@@ -114,7 +112,6 @@ public class TestAsynchronousValidationRequest {
                 mockParent, mockClient, target, request, mockContext, mockCacheEntry,
                 identifier, 0);
 
-        // response not used
         EasyMock.expect(mockClient.revalidateCacheEntry(target, request, mockContext, mockCacheEntry)).andReturn(mockResponse);
         EasyMock.expect(mockResponse.getStatusLine()).andReturn(mockStatusLine);
         EasyMock.expect(mockStatusLine.getStatusCode()).andReturn(200);
@@ -135,7 +132,6 @@ public class TestAsynchronousValidationRequest {
                 mockParent, mockClient, target, request, mockContext, mockCacheEntry,
                 identifier, 0);
 
-        // response not used
         EasyMock.expect(
                 mockClient.revalidateCacheEntry(target, request, mockContext,
                         mockCacheEntry)).andThrow(new ProtocolException());
@@ -155,7 +151,6 @@ public class TestAsynchronousValidationRequest {
                 mockParent, mockClient, target, request, mockContext, mockCacheEntry,
                 identifier, 0);
 
-        // response not used
         EasyMock.expect(
                 mockClient.revalidateCacheEntry(target, request, mockContext,
                         mockCacheEntry)).andThrow(new IOException());
@@ -175,7 +170,6 @@ public class TestAsynchronousValidationRequest {
                 mockParent, mockClient, target, request, mockContext, mockCacheEntry,
                 identifier, 0);
 
-        // response not used
         EasyMock.expect(
                 mockClient.revalidateCacheEntry(target, request, mockContext,
                         mockCacheEntry)).andThrow(new RuntimeException());
