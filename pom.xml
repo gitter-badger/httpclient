@@ -63,18 +63,16 @@
     <url>scm:git:ssh://git@github.com/atlassian/httpclient</url>
   </scm>
 
-    <distributionManagement>
-        <repository>
-            <id>atlassian-m2-repository</id>
-            <name>Atlassian Public Repository</name>
-            <url>https://maven.atlassian.com/public</url>
-        </repository>
-        <snapshotRepository>
-            <id>atlassian-m2-snapshot-repository</id>
-            <name>Atlassian Public Snapshot Repository</name>
-            <url>https://maven.atlassian.com/public-snapshot</url>
-        </snapshotRepository>
-    </distributionManagement>
+  <distributionManagement>
+    <repository>
+      <id>atlassian-3rdparty</id>
+      <url>https://maven.atlassian.com/3rdparty</url>
+    </repository>
+    <snapshotRepository>
+      <id>atlassian-3rdparty-snapshot</id>
+      <url>https://maven.atlassian.com/3rdparty-snapshot</url>
+    </snapshotRepository>
+  </distributionManagement>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
