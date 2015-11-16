@@ -75,3 +75,5 @@ Contact
 
   o For current status information visit the status page at
     http://hc.apache.org/status.html
+
+Join the chat at https://gitter.im/atlassian/httpclient
